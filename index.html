@@ -548,6 +548,28 @@ body.is-rotated #nav:hover,body.is-rotated #nav:focus-within{opacity:1;}
   background:linear-gradient(180deg,rgba(255,255,255,0),#fff 88%);
 }
 
+/* ── Os dez módulos ── */
+.mods{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;}
+.mod{
+  background:var(--paper);border:1px solid var(--ln-light);border-radius:14px;
+  box-shadow:var(--sh-1);padding:18px 18px 20px;display:flex;flex-direction:column;gap:7px;
+}
+.mod .n{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--tx-lo);}
+.mod .ic{color:var(--brand);height:24px;display:flex;align-items:center;margin:2px 0 1px;}
+.mod .ic svg{width:22px;height:22px;}
+.mod .t{font-size:17px;font-weight:700;color:var(--tx-hi);letter-spacing:-.01em;line-height:1.2;}
+.mod .d{font-size:13.5px;line-height:1.35;color:var(--tx-lo);}
+.mod.star{background:linear-gradient(160deg,#FFF3F5,#fff);border-color:rgba(230,36,70,.22);}
+.mod.star .n{color:var(--brand);}
+
+/* Faixa calma de fecho */
+.calmbar{
+  display:flex;align-items:center;gap:22px;padding:20px 26px;border-radius:var(--r-md);
+  background:var(--paper);border:1px solid var(--ln-light);box-shadow:var(--sh-1);
+}
+.calmbar p{flex:1;font-size:17px;line-height:1.45;color:var(--tx-md);}
+.calmbar p strong{color:var(--tx-hi);}
+
 </style>
 </head>
 <body>
@@ -933,6 +955,44 @@ body.is-rotated #nav:hover,body.is-rotated #nav:focus-within{opacity:1;}
   </div>
 </section>
 
+<!-- ══════════════════ 09 · A PLATAFORMA ══════════════════ -->
+<section class="slide" data-bg="soft" data-chapter="A plataforma" data-title="Dez módulos, uma plataforma">
+  <div class="deco arc ghost-d" style="width:400px;height:400px;right:-200px;top:-170px;"></div>
+  <div class="body mid">
+
+    <div class="row an" style="--d:0;align-items:flex-end;gap:48px;">
+      <div>
+        <div class="eyebrow">O que o Revenda Mais entrega</div>
+        <h2>Dez módulos,<br>uma só <span class="rd">plataforma</span></h2>
+      </div>
+      <div class="sp"></div>
+      <p class="sm an" style="--d:2;max-width:430px;text-align:right;">
+        Não precisa conhecer cada um agora. O que importa é que todos falam a mesma língua,
+        dentro do mesmo sistema.
+      </p>
+    </div>
+    <div class="rule an" style="--d:2;"></div>
+
+    <div class="mods an" style="--d:3;margin-top:6px;">
+      <div class="mod"><div class="n">01</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l1.4-5.2A2 2 0 0 1 9.3 10h5.4a2 2 0 0 1 1.9 1.8L18 17M7 17v2M17 17v2M8.5 14h7"/></svg></div><div class="t">Estoque</div><div class="d">Onde tudo começa</div></div>
+      <div class="mod"><div class="n">02</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M16 5.5a3 3 0 0 1 0 5M18 19.5c0-2-.6-3.4-1.6-4.4"/></svg></div><div class="t">Clientes</div><div class="d">A carteira da loja</div></div>
+      <div class="mod star"><div class="n">03</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M16 7.5c0-1.4-1.8-2.5-4-2.5S8 6.1 8 7.5s1.6 2.1 4 2.6c2.4.5 4 1.3 4 2.9s-1.8 2.5-4 2.5-4-1.1-4-2.5"/></svg></div><div class="t">Financeiro</div><div class="d">O caixa sob controle</div></div>
+      <div class="mod"><div class="n">04</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg></div><div class="t">Integrador</div><div class="d">Do pátio à vitrine</div></div>
+      <div class="mod"><div class="n">05</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.2l5.9-.8L12 3Z"/></svg></div><div class="t">Avaliação Pro</div><div class="d">O preço certo</div></div>
+      <div class="mod"><div class="n">06</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div><div class="t">NF-e</div><div class="d">A venda formalizada</div></div>
+      <div class="mod"><div class="n">07</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8Z"/><path d="M8 9h8M8 12.5h5"/></svg></div><div class="t">CRM</div><div class="d">Nenhum lead perdido</div></div>
+      <div class="mod"><div class="n">08</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4.5M9.5 4.5h5M9 13v1.5M15 13v1.5M9.5 17.5h5"/></svg></div><div class="t">Agente de IA</div><div class="d">Plantão de 24 horas</div></div>
+      <div class="mod"><div class="n">09</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.7 4.6L18 9l-4.3 1.4L12 15l-1.7-4.6L6 9l4.3-1.4L12 3Z"/><path d="M18.5 15.5 19.4 18l2.1.8-2.1.8-.9 2.4-.9-2.4-2.1-.8 2.1-.8.9-2.5Z"/></svg></div><div class="t">IA em Operações</div><div class="d">Rotina acelerada</div></div>
+      <div class="mod"><div class="n">10</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M6.5 6.5h.01M9.5 6.5h.01"/></svg></div><div class="t">Sites</div><div class="d">A vitrine própria</div></div>
+    </div>
+
+    <div class="calmbar an" style="--d:6;margin-top:22px;">
+      <p>Uma informação cadastrada uma vez percorre <strong>o estoque, a venda, o financeiro e a vitrine</strong> sem ser digitada de novo.</p>
+      <span class="pill">+500 funcionalidades</span>
+    </div>
+  </div>
+</section>
+
 <!-- ══════════════════ 09 · RENAVE · O QUE MUDA ══════════════════ -->
 <section class="slide" data-bg="paper" data-chapter="A virada do RENAVE" data-title="RENAVE obrigatório">
   <div class="deco dots faint" style="width:150px;height:120px;right:110px;top:104px;"></div>
@@ -1132,7 +1192,7 @@ body.is-rotated #nav:hover,body.is-rotated #nav:focus-within{opacity:1;}
 <div id="nav">
   <button id="btn-ix" title="Índice (G)" aria-label="Índice">☰</button>
   <button id="btn-prev" title="Anterior (←)" aria-label="Slide anterior">←</button>
-  <span id="count">01 / 12</span>
+  <span id="count">01 / 13</span>
   <button id="btn-next" title="Próximo (→)" aria-label="Próximo slide">→</button>
   <button id="btn-fs" title="Tela cheia (F)" aria-label="Tela cheia">⤢</button>
 </div>
