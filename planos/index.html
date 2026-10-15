@@ -576,71 +576,30 @@ body.is-rotated #nav:hover,body.is-rotated #nav:focus-within{opacity:1;}
 .calmbar p strong{color:var(--tx-hi);}
 
 /* ── Planos e valores ── */
-.bill-note{display:flex;flex-direction:column;align-items:flex-end;gap:4px;padding-bottom:6px;}
-.bill-k{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brand);}
-.bill-v{font-size:16px;color:var(--tx-md);}
-.bill-v b{color:var(--tx-hi);font-weight:700;}
-
-.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:4px;}
-.plan{
-  background:var(--paper);border:1px solid var(--ln-light);border-radius:var(--r-md);
-  box-shadow:var(--sh-1);padding:24px 24px 20px;display:flex;flex-direction:column;
-}
-.plan.star{border:2px solid var(--brand);padding:23px 23px 19px;background:linear-gradient(170deg,#FFF3F5 0%,#fff 46%);box-shadow:0 18px 44px rgba(230,36,70,.14);}
-.plan-hd{display:flex;align-items:baseline;gap:8px;}
-.plan-k{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tx-lo);}
-.plan-t{font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;letter-spacing:-.02em;color:var(--tx-hi);}
-.plan.star .plan-k{color:var(--brand);}
-
-.price{display:flex;align-items:baseline;gap:6px;margin-top:14px;font-family:'Poppins',sans-serif;color:var(--brand);}
-.price .cur{font-size:22px;font-weight:600;letter-spacing:-.01em;}
-.price .val{font-size:52px;font-weight:700;letter-spacing:-.04em;line-height:1;}
-.price .per{font-family:'Roboto',sans-serif;font-size:15px;font-weight:500;color:var(--tx-lo);}
-.annual{margin-top:8px;font-size:14.5px;color:var(--tx-lo);}
-.annual b{color:var(--tx-hi);font-weight:700;}
-
-.specs{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;margin-top:18px;padding-top:16px;border-top:1px solid var(--ln-light);}
-.specs div{display:flex;flex-direction:column;gap:2px;}
-.specs b{font-family:'Poppins',sans-serif;font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--tx-hi);line-height:1.1;}
-.specs span{font-size:13px;color:var(--tx-lo);}
-
-.plan-ft{
-  margin-top:18px;display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:9px;
-  font-size:13.5px;font-weight:600;color:var(--pos);background:rgba(14,122,60,.07);
-}
-.plan-ft::before{content:'✓';font-weight:700;}
-.plan-ft.off{color:var(--brand-dark);background:var(--brand-tint);}
-.plan-ft.off::before{content:'—';}
-
-.addon{
-  display:flex;align-items:center;gap:24px;margin-top:20px;padding:22px 26px;border-radius:var(--r-md);
-  background:var(--ink-2);color:#fff;box-shadow:0 22px 50px rgba(11,14,20,.20);position:relative;overflow:hidden;
-}
-.addon::after{content:'';position:absolute;right:-90px;top:-90px;width:240px;height:240px;border-radius:50%;border:28px solid rgba(230,36,70,.08);pointer-events:none;}
-.addon-ic{flex:0 0 52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--brand);color:#fff;box-shadow:0 10px 26px rgba(230,36,70,.35);}
-.addon-ic svg{width:26px;height:26px;}
+.pv-eb{font-family:'Poppins',sans-serif;font-size:19px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);}
+.pv-tt{font-size:44px;line-height:1.1;letter-spacing:-.025em;margin-top:6px;color:var(--tx-hi);}
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:28px;}
+.plan{background:var(--paper);border:1px solid var(--ln-light);border-radius:18px;padding:28px 24px 24px;min-height:278px;}
+.plan.star{border:2px solid var(--brand);padding:27px 23px 23px;}
+.plan-t{font-family:'Poppins',sans-serif;font-size:22px;font-weight:600;color:var(--tx-hi);letter-spacing:-.01em;}
+.price{display:flex;align-items:baseline;gap:8px;margin-top:14px;}
+.price .val{font-family:'Poppins',sans-serif;font-size:34px;font-weight:700;letter-spacing:-.02em;color:var(--brand);line-height:1.1;}
+.price .per{font-size:16px;color:var(--tx-lo);}
+.annual{margin-top:12px;padding-bottom:16px;border-bottom:1px solid var(--ln-light);font-size:16px;color:var(--tx-lo);}
+.specs{margin-top:16px;font-size:16px;line-height:1.5;color:var(--tx-md);}
+.plan-off{display:block;margin-top:14px;padding:8px 10px;border-radius:7px;background:#FDE8EC;color:var(--brand-dark);font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;}
+.addon{display:flex;align-items:center;gap:22px;margin-top:24px;padding:24px 34px 24px 32px;border-radius:18px;background:#1E1F26;box-shadow:0 14px 34px rgba(11,14,20,.18);}
+.addon-ic{flex:0 0 44px;height:44px;border-radius:10px;display:grid;place-items:center;background:var(--brand);color:#fff;}
+.addon-ic svg{width:22px;height:22px;}
 .addon-tx{flex:1;min-width:0;}
-.addon-tag{
-  display:inline-block;padding:4px 11px;border-radius:var(--r-full);
-  font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  background:rgba(230,36,70,.16);border:1px solid rgba(230,36,70,.4);color:#FF8EA2;
-}
-.addon-t{font-family:'Poppins',sans-serif;font-size:26px;font-weight:700;letter-spacing:-.02em;margin-top:8px;line-height:1.1;}
-.addon-tx p{font-size:15.5px;color:var(--tx-inv-md);margin-top:6px;}
-.addon-pr{
-  position:relative;z-index:1;padding:14px 24px;border-radius:14px;text-align:right;
-  background:rgba(255,255,255,.04);border:1px solid rgba(230,36,70,.45);
-}
-.addon-pr .price{margin-top:0;justify-content:flex-end;color:#FF4D6B;}
-.addon-pr .price .val{font-size:42px;}
-.addon-pr .price .per,.addon-pr .annual{color:var(--tx-inv-lo);}
-.addon-pr .annual{margin-top:4px;font-size:13.5px;}
-.addon-pr .annual b{color:rgba(255,255,255,.85);}
-
-.incl{display:flex;align-items:center;gap:18px;margin-top:20px;}
-.incl-k{flex:0 0 auto;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tx-lo);}
-.incl .chips{gap:7px;}
-.incl .pill{font-size:12.5px;padding:5px 12px;}
+.addon-tag{display:inline-block;padding:4px 12px;border-radius:7px;background:rgba(230,36,70,.22);color:#FF9AAC;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;}
+.addon-t{font-family:'Poppins',sans-serif;font-size:23px;font-weight:600;color:#fff;margin-top:8px;}
+.addon-tx p{font-size:15.5px;color:rgba(255,255,255,.6);margin-top:6px;}
+.addon-pr{padding:14px 22px;border:1px solid rgba(230,36,70,.6);border-radius:10px;background:rgba(230,36,70,.08);text-align:right;}
+.addon-pr .price{margin-top:0;}
+.addon-pr .price .per{color:rgba(255,255,255,.6);}
+.addon-pr .annual{margin:4px 0 0;padding:0;border:0;font-size:14px;color:rgba(255,255,255,.45);}
+.pv-note{margin-top:22px;font-size:16px;line-height:1.5;color:var(--tx-lo);max-width:1340px;}
 
 </style>
 </head>
@@ -835,102 +794,58 @@ body.is-rotated #nav:hover,body.is-rotated #nav:focus-within{opacity:1;}
 
 <!-- ══════════════════ 05 · PLANOS E VALORES ══════════════════ -->
 <section class="slide" data-bg="soft" data-chapter="Planos e valores" data-title="Planos e valores">
-  <div class="deco arc ghost-d" style="width:420px;height:420px;right:-210px;top:-170px;"></div>
   <div class="body mid">
 
-    <div class="row an" style="--d:0;align-items:flex-end;gap:48px;">
-      <div>
-        <div class="eyebrow">Planos e valores</div>
-        <h2>Um plano para cada <span class="rd">tamanho de loja</span></h2>
-      </div>
-      <div class="sp"></div>
-      <div class="bill-note">
-        <span class="bill-k">Plano anual</span>
-        <span class="bill-v"><b>R$ 50 a menos</b> por mês em todos os planos</span>
-      </div>
+    <div class="an" style="--d:0;">
+      <div class="pv-eb">Planos e valores</div>
+      <h2 class="pv-tt">Um plano para cada tamanho de loja</h2>
     </div>
-    <div class="rule an" style="--d:2;"></div>
 
-    <div class="plans an" style="--d:3;">
+    <div class="plans an" style="--d:2;">
       <div class="plan">
-        <div class="plan-hd"><span class="plan-k">Plano</span><span class="plan-t">0.5</span></div>
-        <div class="price"><span class="cur">R$</span><span class="val">600</span><span class="per">/mês</span></div>
-        <div class="annual">Anual: <b>R$ 550/mês</b></div>
-        <div class="specs">
-          <div><b>5</b><span>usuários</span></div>
-          <div><b>25</b><span>veículos</span></div>
-          <div><b>1</b><span>CNPJ</span></div>
-          <div><b>1 GB</b><span>armazenamento</span></div>
-        </div>
-        <div class="plan-ft off">Sem módulo financeiro</div>
+        <div class="plan-t">Plano 0.5</div>
+        <div class="price"><span class="val">R$ 600</span><span class="per">/mês</span></div>
+        <div class="annual">Anual: R$ 550/mês</div>
+        <div class="specs">5 usuários · 25 veículos · 1 CNPJ · 1GB</div>
+        <span class="plan-off">Sem módulo financeiro</span>
       </div>
-
       <div class="plan">
-        <div class="plan-hd"><span class="plan-k">Plano</span><span class="plan-t">1.0</span></div>
-        <div class="price"><span class="cur">R$</span><span class="val">800</span><span class="per">/mês</span></div>
-        <div class="annual">Anual: <b>R$ 750/mês</b></div>
-        <div class="specs">
-          <div><b>10</b><span>usuários</span></div>
-          <div><b>50</b><span>veículos</span></div>
-          <div><b>1</b><span>CNPJ</span></div>
-          <div><b>2 GB</b><span>armazenamento</span></div>
-        </div>
-        <div class="plan-ft">Módulo financeiro incluso</div>
+        <div class="plan-t">Plano 1.0</div>
+        <div class="price"><span class="val">R$ 800</span><span class="per">/mês</span></div>
+        <div class="annual">Anual: R$ 750/mês</div>
+        <div class="specs">10 usuários · 50 veículos · 1 CNPJ · 2GB</div>
       </div>
-
       <div class="plan star">
-        <div class="plan-hd"><span class="plan-k">Plano</span><span class="plan-t">2.0</span></div>
-        <div class="price"><span class="cur">R$</span><span class="val">1.000</span><span class="per">/mês</span></div>
-        <div class="annual">Anual: <b>R$ 950/mês</b></div>
-        <div class="specs">
-          <div><b>15</b><span>usuários</span></div>
-          <div><b>100</b><span>veículos</span></div>
-          <div><b>1</b><span>CNPJ</span></div>
-          <div><b>3 GB</b><span>armazenamento</span></div>
-        </div>
-        <div class="plan-ft">Módulo financeiro incluso</div>
+        <div class="plan-t">Plano 2.0</div>
+        <div class="price"><span class="val">R$ 1.000</span><span class="per">/mês</span></div>
+        <div class="annual">Anual: R$ 950/mês</div>
+        <div class="specs">15 usuários · 100 veículos · 1 CNPJ · 3GB</div>
       </div>
-
       <div class="plan">
-        <div class="plan-hd"><span class="plan-k">Plano</span><span class="plan-t">3.0</span></div>
-        <div class="price"><span class="cur">R$</span><span class="val">1.300</span><span class="per">/mês</span></div>
-        <div class="annual">Anual: <b>R$ 1.250/mês</b></div>
-        <div class="specs">
-          <div><b>20</b><span>usuários</span></div>
-          <div><b>150</b><span>veículos</span></div>
-          <div><b>1</b><span>CNPJ</span></div>
-          <div><b>4 GB</b><span>armazenamento</span></div>
-        </div>
-        <div class="plan-ft">Módulo financeiro incluso</div>
+        <div class="plan-t">Plano 3.0</div>
+        <div class="price"><span class="val">R$ 1.300</span><span class="per">/mês</span></div>
+        <div class="annual">Anual: R$ 1.250/mês</div>
+        <div class="specs">20 usuários · 150 veículos · 1 CNPJ · 4GB</div>
       </div>
     </div>
 
-    <div class="addon an" style="--d:5;">
-      <div class="addon-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+    <div class="addon an" style="--d:4;">
+      <div class="addon-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6l-7-3Z"/><path d="m9.5 12 1.8 1.8 3.2-3.3"/></svg></div>
       <div class="addon-tx">
         <span class="addon-tag">Plano complementar</span>
         <div class="addon-t">NF-e + RENAVE</div>
         <p>Até 1 usuário · 1 CNPJ · cadastro e emissão de NF-e com integração ao RENAVE</p>
       </div>
       <div class="addon-pr">
-        <div class="price"><span class="cur">R$</span><span class="val">430</span><span class="per">/mês</span></div>
-        <div class="annual">Anual: <b>R$ 380/mês</b></div>
+        <div class="price"><span class="val">R$ 430</span><span class="per">/mês</span></div>
+        <div class="annual">anual R$ 380/mês</div>
       </div>
     </div>
 
-    <div class="incl an" style="--d:6;">
-      <span class="incl-k">Inclusos em todos os planos</span>
-      <div class="chips">
-        <span class="pill dim">Estoque</span>
-        <span class="pill dim">Avaliação</span>
-        <span class="pill dim">Comercial</span>
-        <span class="pill dim">Clientes e Fornecedores</span>
-        <span class="pill dim">Integrador Web · 5 portais</span>
-        <span class="pill dim">Relatórios</span>
-        <span class="pill dim">Aplicativo Revenda Mais</span>
-        <span class="pill">Financeiro · exceto no 0.5</span>
-      </div>
-    </div>
+    <p class="pv-note an" style="--d:5;">
+      Módulos inclusos em todos os planos (exceto Financeiro no 0.5): Estoque, Avaliação, Comercial,
+      Controle de Clientes e Fornecedores, Integrador Web (5 portais), Relatórios e Aplicativo Revenda Mais.
+    </p>
   </div>
 </section>
 
